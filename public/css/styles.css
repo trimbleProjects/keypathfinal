@@ -1,0 +1,288 @@
+body{
+    background-color: aliceblue;
+    font-weight: 500;
+    margin: 0;
+}
+a,
+a:visited{
+    color: blue;;
+}
+p{
+    font-size: 20px;
+}
+#mainContent{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1350px;
+}
+#headerArea{
+    background:#fff;
+    display: flex;
+    height: 100px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+#headerArea > div{
+    width:50%;
+}
+#headerArea > div:nth-of-type(2){
+    margin:0 auto;
+}
+.standardBtn{
+    background:blue;
+    color: #fff;
+    font-size: 1em;
+    border:none;
+    padding: 8px;
+    border-radius: 12px;
+}
+form,
+form input,
+form textarea{
+    font-size: 18px
+}
+.headerBtn{
+    margin:5% 5% 1% 5%;
+}
+.standardBtn:hover{
+    box-shadow:2px 2px 3px hsl(0deg 0% 0% / .3)
+}
+#quizBtnsDiv{
+    width: max-content;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+#headerLogin{
+    display:none;
+}
+#login:hover #headerLogin{
+    display:grid;
+    width: 220px;
+    box-shadow: 0 8px 40px;
+    padding: 18px;
+    background: #fff;
+    z-index: 5;
+    position: relative;
+    border-radius: 12px;
+    position: absolute;
+    right: 40px;
+    margin-top: 65px;
+}
+.question{
+    background: #fff;
+    padding: 14px;
+    border-radius: 12px;
+    box-shadow: 0 8px 40px black;
+    margin: 12px auto;
+    display:none;
+    width: 600px;
+    max-width: 100%;
+}
+.question.firstQ{
+    display:block ;
+}
+.question div{
+    font-size: 22px;
+    margin:1% 0;
+}
+input[type='radio']{
+    height:18px;
+    width:18px;
+}
+
+.qid{
+    display:none;
+}
+
+.submitReponseBtn{
+    display:none;
+}
+
+#questionContainer{
+    width:40%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.form-item{
+    display: grid;
+    grid-template-columns: 40% 50%;
+    margin: 8px auto;
+}
+#loginBtn,
+#surveyBtn{
+    margin-top: 30px;
+    position: absolute;
+    
+}
+#loginBtn{
+    right: 40px;
+}
+#surveyBtn{
+    right: 140px;
+}
+.loggedInMenu a{
+    text-decoration: none;
+    color:black;
+    padding: 7px;
+    font-size: 20px;
+    border-radius: 12px;
+}
+.loggedInMenu a:visited{
+    color:black;
+}
+.loggedInMenu a:hover{
+    background:aliceblue;
+}
+.responseContainer{
+    background:#fff;
+    margin: 18px auto 0 auto;
+    padding: 8px;
+    border-radius: 12px;
+    border: 2px solid grey;
+    margin: 8%;
+}
+.responseContainer div{
+    margin:8px 0;
+}
+.responseContainer div:nth-child(2n){
+    margin-bottom:7%
+}
+#pastResponses{
+    width: max-content;
+    background-color: #fff;
+    padding:3%;
+    margin: 32px auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 40px;
+    max-width: 90%;
+}
+.responseGrid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+#keypath,
+#keypath:visited{
+    color:black;
+    text-decoration:none;
+}
+.responseTitle{
+    font-weight:700;
+}
+#chart{
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+#chartTitle{
+    width: max-content;
+    margin: 5% auto 1% auto;
+    max-width:90%;
+}
+#questionForm{
+    margin:5% auto;
+    max-width:90%;
+}
+#questionBox{
+    width:90%;
+}
+#adminQuestions{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#adminQuestions > div{
+    width:44%;
+    min-width:300px;
+    margin: 1%;
+    background: #fff;
+    padding: 2%;
+    border-radius: 12px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    max-height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+#editQuestions div{
+    margin: 3% 1%;
+    font-size: 18px;
+}
+#adjustQuestions{
+    width: 50%;
+    min-width: 300px;
+    margin: 5% auto;
+    padding: 5%;
+    border-radius: 12px;
+}
+#adjustQuestions textarea{
+    width: 90%;
+}
+#loginPage{
+    width: max-content;
+    min-width: 300px;
+    margin: 5% auto;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    background: #fff;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+#loginPage div,
+#loginPage h3{
+    width: max-content;
+    margin:4% auto;
+}
+
+#homePageBackgroundContainer{
+    background:#d2d3d4;
+    width: 80%;
+    border-radius: 12px;
+    margin: 5% auto;
+    padding:.4%;
+    box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.4);
+    
+}
+#homePageContainer{
+    padding: 5%;
+    background: #fff;
+    border-radius:12px;
+}
+#resultsContainer > div{
+    margin: 22px;
+}
+.individualUser{
+    height:200px;
+}
+.individualUser div{
+    margin: 5% 0;
+}
+.mainFlex{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.viewResults div{
+    margin: 2.5% 0
+}
+.deleteBtn{
+    color:red;
+    width: 200px;
+    font-size: 18px;
+    margin: 10% auto;
+}
+@media only screen and (max-width:480px){
+    .responseGrid{
+        grid-template-columns:90%;
+    }
+    #adminQuestions > div{
+        width:90%;
+        margin: 5% auto;
+    }
+    .desktop{
+        display:none;
+    }
+}
+@media only screen and (min-width:480px){
+    .mobile{
+        display:none;
+    }
+}
